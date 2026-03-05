@@ -1,4 +1,4 @@
-# @sdjz-wiki/balancer
+# @sdjz/balacer
 
 A **Vercel Edge / Vercel Serverless / Node 18+** compatible load balancer library.
 
@@ -13,13 +13,13 @@ Core strategy:
 ## Install
 
 ```bash
-npm i @sdjz-wiki/balancer
+npm i @sdjz/balacer
 ```
 
 ## Usage (HTTP / fetch)
 
 ```ts
-import { LoadBalancer } from '@sdjz-wiki/balancer';
+import { LoadBalancer } from '@sdjz/balacer';
 
 const balancer = new LoadBalancer([
   { id: 'a', url: 'https://a.example.com', weight: 2, maxInflight: 64, pools: ['chat'] },

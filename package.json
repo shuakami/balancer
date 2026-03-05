@@ -1,5 +1,5 @@
 {
-  "name": "@sdjz-wiki/balancer",
+  "name": "@sdjz/balacer",
   "version": "0.1.0",
   "type": "module",
   "description": "Vercel Edge/Node compatible SOTA load balancer (P2C + PeakEWMA)",
