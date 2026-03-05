@@ -1,0 +1,46 @@
+{
+  "name": "@sdjz-wiki/balancer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Vercel Edge/Node compatible SOTA load balancer (P2C + PeakEWMA)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjz-wiki/balancer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sdjz-wiki/balancer/issues"
+  },
+  "homepage": "https://github.com/sdjz-wiki/balancer#readme",
+  "keywords": [
+    "load-balancer",
+    "p2c",
+    "ewma",
+    "vercel",
+    "edge",
+    "serverless",
+    "ai"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node test/smoke.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
